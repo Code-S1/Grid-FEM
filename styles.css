@@ -1,0 +1,463 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.div {
+    background-color: aqua;
+}
+
+
+.container {
+    display: grid;
+    grid-template-areas:
+        'one  three   three  four'
+        'one  three   three  four'
+        'one  three   three  four'
+        'one  three   three  four'
+        'one   six    seven  four'
+        'two   six    seven  four'
+        'two   six    seven  four'
+        'two  eight   five   five'
+        'two  eight   five   five'
+        'two  eight   five   five'
+    ;
+    gap: 1rem;
+    background-color: rgb(241, 241, 241);
+    min-height: 170dvh;
+    padding: 1.5% 1.5%;
+
+    & .div1 {
+        grid-area: one;
+    }
+
+    & .div2 {
+        grid-area: two;
+    }
+
+    & .div3 {
+        grid-area: three;
+    }
+
+    & .div4 {
+        grid-area: four;
+    }
+
+    & .div5 {
+        grid-area: five;
+    }
+
+    & .div6 {
+        grid-area: six;
+    }
+
+    & .div7 {
+        grid-area: seven;
+    }
+
+    & .div8 {
+        grid-area: eight;
+    }
+}
+
+.container>* {
+    background-color: black;
+    border-radius: 1rem;
+}
+
+.div1 {
+
+    background-color: hsl(31, 66%, 93%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.content_text {
+    padding: 1.5rem;
+    letter-spacing: -4px;
+    font-size: 3.2rem;
+    color: rgba(0, 0, 0, 0.89);
+    line-height: 3rem;
+}
+
+.italic_quicker {
+    color: hsl(256, 67%, 59%);
+}
+
+.mouse_button {
+    width: 80%;
+}
+
+.div2 {
+
+
+
+    background-color: hsl(39, 100%, 71%);
+}
+
+.bottom_left_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+    padding: 1.8rem 1.4rem 1.8rem 1.8rem;
+    color: rgba(0, 0, 0, 0.89);
+}
+
+.write_text {
+    font-size: 3.7rem;
+    line-height: 4rem;
+    letter-spacing: -4px;
+}
+
+.chat_image {
+    width: 100%;
+
+}
+
+.div3 {
+
+    background-color: hsl(256, 67%, 59%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_media_text {
+    font-size: 4.5rem;
+    padding: 0 1rem 1.5rem 1rem;
+    text-align: center;
+    line-height: 4.5rem;
+    letter-spacing: -2px;
+}
+
+.color_10_social_media {
+    color: hsl(39, 100%, 71%);
+}
+
+.five_star_review {
+    width: 35%;
+}
+
+.bottom_image_text {
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding-top: .5rem;
+}
+
+
+.div4 {
+
+    background-color: hsl(254, 88%, 90%);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.main_4 {
+    min-height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    overflow: hidden;
+}
+
+.schedule_text {
+    font-size: 3rem;
+    letter-spacing: -3px;
+    line-height: 3rem;
+    color: rgba(0, 0, 0, 0.89);
+}
+
+.post_analytics {
+    width: 160%;
+    margin-right: -8rem;
+}
+
+.bottom_optimizing_text {
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, 0.89);
+    letter-spacing: -2px;
+    line-height: 2.3rem;
+    padding-right: 1rem;
+}
+
+.div5 {
+
+    background-color: hsl(256, 67%, 59%);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 3rem;
+    color: white;
+    letter-spacing: -2px;
+}
+
+.a_follower_chart {
+    width: 50%;
+}
+
+
+
+
+.div6 {
+
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+
+.main_6 {
+    min-height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 90%;
+}
+
+.a_insta_account_image {
+    width: 130%;
+    margin-right: -2rem;
+
+}
+
+.manage_text {
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.89);
+    letter-spacing: -3px;
+    line-height: 3rem;
+    padding-right: 1rem;
+}
+
+.div7 {
+
+    background-color: hsl(39, 100%, 71%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+.main_7 {
+    font-size: 2.9rem;
+    line-height: 2.8rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: -3px;
+    overflow: hidden;
+    min-height: 100%;
+    color: rgba(0, 0, 0, 0.89);
+}
+
+.calender_image {
+    width: 100%;
+    margin-bottom: -6rem;
+}
+
+.div8 {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_bottom_white {
+    min-height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.fift_six_text {
+    font-size: 4rem;
+    color: rgba(0, 0, 0, 0.89);
+    letter-spacing: -3px;
+}
+
+.faster_audience_text {
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, 0.89);
+    letter-spacing: -1px;
+}
+
+.insta_pfps {
+    width: 90%;
+}
+
+@media (max-width: 43.75rem) {
+    .container {
+        display: grid;
+        grid-template-areas:
+            ' one     two'
+            ' one     two'
+            'three   four'
+            'three   four'
+            'five    six '
+            'five    six '
+            'seven  eight'
+            'seven  eight'
+        ;
+        gap: 1rem;
+
+        & .div5 {
+            grid-area: five;
+            font-size: 1rem;
+            letter-spacing: -1px;
+        }
+
+    }
+
+
+}
+
+@media (max-width: 25rem) {
+    .container {
+        display: grid;
+        grid-template-areas:
+            ' one     one'
+            ' two     two'
+            'three   three'
+            'four   four'
+            'five    five '
+            'six    six '
+            'seven  seven'
+            'eight  eight'
+        ;
+        row-gap: 1rem;
+        padding: unset;
+    }
+
+    .chat_image {
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 2rem;
+    }
+
+    .social_media_text {
+        padding: 1.5rem;
+    }
+
+    .five_star_review {
+        padding: .5rem;
+        width: 60%;
+    }
+
+    .bottom_image_text {
+        padding-bottom: 1rem;
+    }
+
+    .post_analytics {
+        width: unset;
+        padding: 1rem 0;
+    }
+
+
+    .bottom_optimizing_text {
+        padding-right: .5rem;
+    }
+    
+}
+
+
+@media (max-width: 62.5rem) {
+    .container {
+        min-height: 100dvh;
+    }
+
+    .content_text {
+        font-size: 2.5rem;
+        letter-spacing: -3px;
+    }
+
+    .social_media_text {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        padding: 1rem;
+    }
+
+
+    .bottom_image_text {
+
+        font-size: 1rem;
+    }
+
+    .schedule_text {
+        font-size: 2rem;
+        padding: 1rem;
+        letter-spacing: -2px;
+        line-height: 2rem;
+    }
+
+    .post_analytics {
+        width: 130%;
+        margin-right: -8rem;
+    }
+
+    .bottom_optimizing_text {
+        font-size: 1.2rem;
+        letter-spacing: -1.5px;
+        line-height: 1.5rem;
+    }
+
+    .write_text {
+        font-size: 2.8rem;
+        line-height: 2.8rem;
+        letter-spacing: -3px;
+    }
+
+    .manage_text {
+        font-size: 1.8rem;
+        letter-spacing: -2px;
+        line-height: 1.8rem;
+    }
+
+    .main_7 {
+        font-size: 2rem;
+        line-height: 2rem;
+        letter-spacing: -2px;
+    }
+
+    .calender_image {
+        margin-bottom: -2rem;
+    }
+
+    .write_text {
+        font-size: 2.3rem;
+        line-height: 2.3rem;
+        letter-spacing: -2px;
+    }
+
+    .bottom_left_box {
+        padding: 1rem;
+    }
+
+    .fift_six_text {
+        font-size: 3rem;
+    }
+
+    .faster_audience_text {
+        font-size: 1.2rem;
+    }
+
+    .div5 {
+        font-size: 2rem;
+    }
+}
